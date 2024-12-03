@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\User\StoreUserRequest;
 use App\Http\Requests\User\UpdateUserRequest;
 use App\Services\UserService;
-use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
@@ -17,9 +17,11 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = $this->service->indexHandler(request()->all());
+        $users = $this->service->indexHandler();
 
-        return view('Dashboard.Users.All', compact('users'));
+        $roles = Role::all();
+
+        return view('Dashboard.Users.All', compact(['users', 'roles']));
     }
 
     /**

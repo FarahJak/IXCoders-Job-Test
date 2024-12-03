@@ -16,7 +16,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = $this->service->indexHandler(request()->all());
+        $tasks = $this->service->indexHandler();
 
         $users = User::all();
 
