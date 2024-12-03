@@ -49,9 +49,9 @@ This guide provides instructions on how to set up and run the Laravel applicatio
       password :123456789
     
 -  Step 6: You can access Users Managment section at: [http://127.0.0.1:8000/admin/users](http://127.0.0.1:8000/admin/users)
--  
+
 -  Step 7: You can access Tasks Managment section at: [http://127.0.0.1:8000/admin/tasks](http://127.0.0.1:8000/admin/tasks)
--  
+ 
 -  Step 8: The image below is showing the Real-Time Notifications using pusher whenever a task's status is updated:
   
   ![photo_2024-12-03_20-58-12](https://github.com/user-attachments/assets/d1957244-422e-4eb7-9e79-aefc697e7169)
