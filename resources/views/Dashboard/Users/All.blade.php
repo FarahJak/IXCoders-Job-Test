@@ -32,6 +32,7 @@
                         <th scope="col">#</th>
                         <th scope="col">name</th>
                         <th scope="col">email</th>
+                        <th scope="col">Role</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -41,6 +42,7 @@
                             <th scope="row">{{ $loop->iteration }}</th>
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
+                            <td>{{ $user->getRoleNames()->first() }}</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -88,6 +90,20 @@
                                                     <label for="inputAddress" class="form-label">Password</label>
                                                     <input type="text" class="form-control" id="inputAddress"
                                                         name="password" placeholder="Please Enter User Password">
+                                                </div>
+                                            </div>
+
+                                            <div class="row g-3">
+                                                <div class="col-12">
+                                                    <label for="inputAddress" class="form-label">Role</label>
+                                                    <select class="form-select" aria-label="Default select example"
+                                                        name="role_name">
+                                                        @foreach ($roles as $role)
+                                                            <option value="{{ $role->name }}">
+                                                                {{ $role->name }}
+                                                            </option>
+                                                        @endforeach
+                                                    </select>
                                                 </div>
                                             </div>
 
@@ -164,6 +180,19 @@
                                 <label for="inputAddress" class="form-label">Password</label>
                                 <input type="text" class="form-control" id="inputAddress" name="password"
                                     placeholder="Please Enter The User Password">
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Role</label>
+                                <select class="form-select" aria-label="Default select example" name="role_name">
+                                    @foreach ($roles as $role)
+                                        <option value="{{ $role->name }}">
+                                            {{ $role->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                     </div>

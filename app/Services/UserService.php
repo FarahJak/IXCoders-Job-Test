@@ -33,6 +33,8 @@ class UserService
 
             $result = $this->model::create($data);
 
+            $result->assignRole($data['role_name']);
+
             DB::commit();
             return true;
         } catch (Exception $e) {
@@ -53,6 +55,8 @@ class UserService
             }
 
             $result->update($data);
+
+            $result->syncRoles($data['role_name']);
 
             DB::commit();
             return true;

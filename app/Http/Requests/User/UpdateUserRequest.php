@@ -26,9 +26,10 @@ class UpdateUserRequest extends FormRequest
         $id = request()->route()->parameter('user');
 
         return [
-            'name'     => 'sometimes|string|max:255',
-            'email'    => ['sometimes', 'email', 'max:255', 'unique:users,email,' . $id,],
-            'password' => 'sometimes|nullable|string',
+            'name'       => 'sometimes|string|max:255',
+            'email'      => ['sometimes', 'email', 'max:255', 'unique:users,email,' . $id,],
+            'password'   => 'sometimes|nullable|string',
+            'role_name'  => 'required|string'
         ];
     }
 }
