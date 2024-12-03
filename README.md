@@ -48,6 +48,7 @@ This guide provides instructions on how to set up and run the Laravel applicatio
 -  Step 7: The image below is showing the Real-Time Notifications using pusher whenever a task's status is updated:
   ![photo_2024-12-03_20-58-12](https://github.com/user-attachments/assets/d1957244-422e-4eb7-9e79-aefc697e7169)
 -  Step 8: File attached for Postman collection for the Api Endpoints:
+[IXCODERS Test.postman_collection.json](https://github.com/user-attachments/files/17997485/IXCODERS.Test.postman_collection.json)
 
   
   
