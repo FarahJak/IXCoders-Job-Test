@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Dashboard\RoleController;
 use App\Http\Controllers\Dashboard\TaskController;
 use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\ProfileController;
@@ -44,9 +43,6 @@ Route::prefix('admin')->name('admin.')->middleware(['auth:web'])->group(function
 
     ## Tasks Route
     Route::resource('tasks', TaskController::class);
-
-    ## Roles Route
-    Route::resource('roles', RoleController::class);
 });
 
 require __DIR__ . '/auth.php';

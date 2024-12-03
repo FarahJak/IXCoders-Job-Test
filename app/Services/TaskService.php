@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Events\TaskUpdated;
 use App\Models\Task;
 use App\Traits\FileTrait;
 use Exception;
@@ -73,6 +74,8 @@ class TaskService
             if (array_key_exists('images', $data)) {
                 $this->storeImages($result, $data);
             }
+
+            event(new TaskUpdated($result));
 
             DB::commit();
             return true;
