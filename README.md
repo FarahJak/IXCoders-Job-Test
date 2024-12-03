@@ -14,29 +14,29 @@ This guide provides instructions on how to set up and run the Laravel applicatio
    composer install
   ```
 -  Step 3: Set Up Environment Variables.
-   • Copy the .env.example file to .env:
+   - Copy the .env.example file to .env:
      ```bash
-   copy .env.example .env
+     copy .env.example .env
      ```
-  • Generate Application Key:
+  - Generate Application Key:
      ```bash
-   php artisan key:generate
+     php artisan key:generate
      ```
-  • Run Migrations and Seed the Database:
+  - Run Migrations and Seed the Database:
      ```bash
-   php artisan migrate --seed
+     php artisan migrate --seed
      ```
-  • Run Migrations and Seed the Database:
+  - Run Migrations and Seed the Database:
      ```bash
-   php artisan migrate --seed
+     php artisan migrate --seed
      ```
-  • Start the Development Server:
+  - Start the Development Server:
      ```bash
-   php artisan serve
+     php artisan serve
      ```
-  • Compile Assets:
+  - Compile Assets:
      ```bash
-   npm run dev
+     npm run dev
      ```
 -  Step 4: You can access the Dashboard will be accessible at [http://localhost:8000/](http://127.0.0.1:8000/login)
   you can use this credintial to login:
