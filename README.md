@@ -14,30 +14,26 @@ This guide provides instructions on how to set up and run the Laravel applicatio
    composer install
   ```
 -  Step 3: Set Up Environment Variables.
-  - Copy the .env.example file to .env:
-     ```bash
-     copy .env.example .env
-     ```
-  - Generate Application Key:
-     ```bash
-     php artisan key:generate
-     ```
-  - Run Migrations and Seed the Database:
-     ```bash
-     php artisan migrate --seed
-     ```
-  - Run Migrations and Seed the Database:
-     ```bash
-     php artisan migrate --seed
-     ```
-  - Start the Development Server:
-     ```bash
-     php artisan serve
-     ```
-  - Compile Assets:
-     ```bash
-     npm run dev
-     ```
+      - Copy the .env.example file to .env:
+         ```bash
+         copy .env.example .env
+         ```
+      - Generate Application Key:
+         ```bash
+         php artisan key:generate
+         ```
+      - Run Migrations and Seed the Database:
+         ```bash
+         php artisan migrate --seed
+         ```
+      - Start the Development Server:
+         ```bash
+         php artisan serve
+         ```
+      - Compile Assets:
+         ```bash
+         npm run dev
+         ```
      
 -  Step 4: File attached for Postman collection for the Api Endpoints:
 [IXCODERS Test.postman_collection.json](https://github.com/user-attachments/files/17997485/IXCODERS.Test.postman_collection.json)
